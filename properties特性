@@ -1,0 +1,13 @@
+注意: MyBatis将按照下面的顺序来加载属性:
+
+1. 在properties 元素体内定义的属性首先被读取。
+
+2. 然后会读取properties元素中resource或url加载的属性,它会覆盖已读取的同名属性。
+
+3.最后读取parameterType传递的属性,它会覆盖已读取的同名属性。
+
+建议:
+
+1. 不要在properties元素体内添加任何属性值,只将属性值定义在properties文件中。
+
+2. 在properties文件中定义属性名有一定的特殊性,如:XXXX.XXXXX.XXXXXX
