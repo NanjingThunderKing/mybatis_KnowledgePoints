@@ -1,0 +1,7 @@
+1.需求 : 在mapper.xml中,定义很多的statement,statement需要parameterType指定输入参数的类型,需要resultType指定输出结果的映射类型。
+        
+        如果在指定类型时输入类型全路径,不方便进行开发,可以针对parameterType或resultType指定的类型定义一些别名,在mapper.xml中通过
+        
+        别名定义,方便开发。
+        
+2.批量别名定义(常用) : 指定报名,mybatis自动扫描包中的po类,自动定义别名,别名就是类名。(首字母大写或小写都可以)
