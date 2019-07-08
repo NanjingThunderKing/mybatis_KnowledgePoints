@@ -1,0 +1,7 @@
+批量加载mapper(推荐使用) : 
+
+    指定mapper接口的包名,mybatis自动扫描包下变所有mapper接口进行加载
+    
+    遵循一些规范:需要将mapper接口类名和mapper.xml映射文件名称保持一致,且在一个目录中。
+    
+    上边规范的前提是:使用的是mapper代理方法。
